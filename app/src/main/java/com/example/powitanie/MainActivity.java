@@ -99,11 +99,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Intent intent = new Intent(this, MainActivity.class);
-
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setSmallIcon(R.drawable.banan)
+                .setSmallIcon(R.drawable.test48)
                 .setContentTitle("Witaj!")
                 .setContentText("Miło Cię widzieć, "+imie+"!")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
