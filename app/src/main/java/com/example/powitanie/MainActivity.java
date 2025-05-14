@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     private void showIsNameDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Potwierdzenie");
-        builder.setMessage("Dynamicznie wygenerowana, np. \"Cześć "+imie+"! Czy chcesz otrzymać powiadomienie powitalne?");
+        builder.setMessage("Cześć "+imie+"! Czy chcesz otrzymać powiadomienie powitalne?");
 
         builder.setPositiveButton("Tak, poproszę", new DialogInterface.OnClickListener() {
             @Override
